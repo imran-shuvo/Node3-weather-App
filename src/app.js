@@ -4,6 +4,7 @@ const app = express();
 const hbs = require('hbs');
 const geocode = require('./utils/geocode')
 const weather = require('./utils/weather')
+const port = process.env.PORT ||3000
 
 
 
@@ -55,7 +56,7 @@ app.get('/weather',(req,res)=>{
         weather(lattitude,longitude,(error,{temperature})=>{
             if(error){
                 return res.send(error);}
-            
+        
             res.send({temperature});
         })
 
@@ -91,6 +92,6 @@ app.get('*',(req,res)=>{
 
 
 //run the app
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('sever is up now');
 })
