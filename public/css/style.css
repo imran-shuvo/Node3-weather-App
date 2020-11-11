@@ -1,0 +1,40 @@
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+.main-content{
+    flex-grow: 1;
+
+}
+img{
+    width: 250px;
+}
+header{
+    color: darkolivegreen;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+header div a{
+    text-decoration: none;
+
+    padding: 10px;
+    color: grey;
+    font-size: 20px;
+
+
+}
+footer p{
+    color: darkgray;
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #eeeeee;
+}
+input,button{
+    padding: 10px;
+}
